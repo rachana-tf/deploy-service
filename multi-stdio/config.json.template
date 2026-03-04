@@ -1,0 +1,29 @@
+{
+  "mcpProxy": {
+    "baseURL": "http://localhost:8000",
+    "addr": ":8000",
+    "name": "E2B Multi-Studio MCP Proxy",
+    "version": "1.0.0",
+    "type": "streamable-http",
+    "options": {
+      "panicIfInvalid": false,
+      "logEnabled": true
+    }
+  },
+  "mcpServers": {
+    "user1": {
+      "command": "npx",
+      "args": ["-y", "@e2b/mcp-server"],
+      "env": {
+        "E2B_API_KEY": "__E2B_API_KEY_USER1__"
+      }
+    },
+    "user2": {
+      "command": "npx",
+      "args": ["-y", "@e2b/mcp-server"],
+      "env": {
+        "E2B_API_KEY": "__E2B_API_KEY_USER2__"
+      }
+    }
+  }
+}
