@@ -6,13 +6,13 @@ image:
   type: build
   build_source:
     type: git
-    repo_url: https://github.com/test-rach/mcp-app
+    repo_url: https://github.com/rachana-tf/deploy-service
     branch_name: main
     ref: main
   build_spec:
     type: dockerfile
-    dockerfile_path: deployment-poc/deploy-service/multi-stdio/Dockerfile
-    build_context_path: deployment-poc/deploy-service
+    dockerfile_path: multi-stdio/Dockerfile
+    build_context_path: .
 ports:
   - port: 8000
     expose: true
